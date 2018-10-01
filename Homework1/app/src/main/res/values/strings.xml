@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Homework1</string>
+    <string name="label1">Value 1:</string>
+    <string name="label2">Value 2:</string>
+    <string name="add">+</string>
+    <string name="subt">-</string>
+    <string name="mult">*</string>
+    <string name="div">/</string>
+    <string-array name="ops_array">
+        <item>+</item>
+        <item>-</item>
+        <item>/</item>
+        <item>*</item>
+    </string-array>
+</resources>
