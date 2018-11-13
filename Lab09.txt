@@ -1,0 +1,27 @@
+9.1
+	a. How many API endpoints does this application support and where are they implemented?
+	   There is 1 API endpoint
+	b. i. What is the Java-based technology used to access data from a database?
+	      JDBC statements
+	   ii. Compare and contrast the following:
+	   		1. SQL query statements vs. JDBC statement objects
+			    The statment object needs to return as a list of rows but
+				an SQL query returns a new table. 
+			2. SQL relations vs. JDBC result sets vs. List<Player>
+			    SQL relations vs. JDBC result sets vs. List<Player>
+				SQL relations are a table format holding tuples of information
+				correlated to each unique identifier (primary key). The JDBC 
+				result set is an object that stores a list(?) of returned
+				information. List<Player> would be an example of a list
+				containing objects.
+	  iii. Under what circumstances would the function getValueStringOrNull() be used?
+  		   getValueStringOrNull() would be used whenever the user wants display something that is could potentially be NULL.
+  	       In PlayerResource.java it's  being used to retrieve and display the player's name. 
+c.Player.java
+    i.What purpose does this Player DAO serve?
+    Provides an object-oriented way to represent and manipulate player "objects"
+    from the traditional (non-object-oriented) Monopoly base.
+    ii. How does it compare with the Player table?
+    In the player table we don't have any methods. Rather, we use queries to get
+    the data. Player DAO serve does have different methods that can be implemented
+    in a object-oriented fashion.
