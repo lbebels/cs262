@@ -26,9 +26,11 @@ public class MainActivity extends AppCompatActivity {
         final Button div = findViewById(R.id.divide); //(/)button
         final TextView result = findViewById(R.id.result); //result display
 
-        //for each operation (add,subt,mult,div), calculate the result of
-        //val1 and val2 when the operation is clicked. Set result to appear
-        //in result TextView
+        /*for each operation (add,subt,mult,div), calculate the result of
+        val1 and val2 when the operation is clicked. Set result to appear
+        in result TextView*/
+
+        //add calculation
         add.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -39,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //subtract calculation
         subt.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -50,6 +53,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //multiply calculation
         mult.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -61,6 +65,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        //division calculation
         //in division operator, use try catch to avoid illegal division by 0
         div.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -71,9 +76,8 @@ public class MainActivity extends AppCompatActivity {
                 try {
                     float divres = Integer.parseInt(val1) / Integer.parseInt(val2);
                     result.setText(String.valueOf(divres));
-                }
-                catch (ArithmeticException e) {
-                    result.setText("DIV 0 Error");
+                } catch (ArithmeticException e) {
+                    result.setText(R.string.errmsg);
                 }
             }
         });

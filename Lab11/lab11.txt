@@ -1,0 +1,16 @@
+Homework01:
+	-reformatted code
+	-removed unused strings
+	-added a string literal to strings values
+	-didn't add hints to EditText
+Homework02:
+	-reformatted code
+	-changed a declaration to final
+	-deleted unused methods
+	-cleaned up unused imports
+	-removed redundant casting
+	-didn't remove depricated method since we were told not to
+	-not sure how to fix "unchecked assignemnt"
+	-for statement is not looping, not sure why
+Homework03:
+	-no changes needed

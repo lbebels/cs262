@@ -6,10 +6,7 @@
     <string name="subt">-</string>
     <string name="mult">*</string>
     <string name="div">/</string>
-    <string-array name="ops_array">
-        <item>+</item>
-        <item>-</item>
-        <item>/</item>
-        <item>*</item>
-    </string-array>
+    <string name="num1">1st number</string>
+    <string name="num2">2nd number</string>
+    <string name="errmsg">DIV 0 Error</string>
 </resources>

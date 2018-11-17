@@ -21,12 +21,12 @@
         android:layout_height="wrap_content"
         android:id="@+id/searchButton"
         android:text="@string/button_text"
-        android:onClick="searchPlayers"/>
+        android:onClick="searchPlayers" />
 
     <TextView
         android:id="@+id/results"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text=""/>
+        android:text="" />
 
 </LinearLayout>

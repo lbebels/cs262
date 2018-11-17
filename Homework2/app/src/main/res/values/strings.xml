@@ -77,4 +77,5 @@
     <string name="pref_title_vibrate">Vibrate</string>
     <string name="input_hint">Enter a user\'s ID</string>
     <string name="network_conn">Please check your network connection and try again.</string>
+    <string name="nores">No Results Found</string>
 </resources>

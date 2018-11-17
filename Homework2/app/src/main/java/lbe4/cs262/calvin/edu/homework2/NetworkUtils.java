@@ -2,7 +2,6 @@ package lbe4.cs262.calvin.edu.homework2;
 
 import android.net.Uri;
 import android.util.Log;
-import android.view.inputmethod.InputMethodManager;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -20,7 +19,7 @@ public class NetworkUtils {
 
     private static final String LOG_TAG = NetworkUtils.class.getSimpleName();
 
-    static String getPlayerInfo(String queryString){
+    static String getPlayerInfo(String queryString) {
         HttpURLConnection urlConnection = null;
         BufferedReader reader = null;
 
@@ -44,35 +43,32 @@ public class NetworkUtils {
 
             reader = new BufferedReader(new InputStreamReader(inputStream));
             String line;
-            while((line = reader.readLine()) != null) {
+            while ((line = reader.readLine()) != null) {
                 /* Since it's JSON, adding a newline isn't necessary (it won't affect
                 parsing) but it does make debugging a *lot* easier if you print out the
                 completed buffer for debugging. */
                 buffer.append(line + "\n");
             }
 
-            if(buffer.length() == 0) {
+            if (buffer.length() == 0) {
                 // Stream was empty.  No point in parsing.
                 return null;
             }
 
             playerJSONString = buffer.toString();
-        }
-        catch (Exception e) {
+        } catch (Exception e) {
             e.printStackTrace();
             return null;
-        }
-        finally {
+        } finally {
 
-            if(urlConnection != null) {
+            if (urlConnection != null) {
                 urlConnection.disconnect();
             }
 
-            if(reader != null) {
+            if (reader != null) {
                 try {
                     reader.close();
-                }
-                catch(IOException e) {
+                } catch (IOException e) {
                     e.printStackTrace();
                 }
             }

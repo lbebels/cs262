@@ -6,8 +6,8 @@ import android.widget.TextView;
 import org.json.JSONArray;
 import org.json.JSONObject;
 
-public class FetchPlayer extends AsyncTask<String,Void,String> {
-    private TextView mPlayerText;
+public class FetchPlayer extends AsyncTask<String, Void, String> {
+    final private TextView mPlayerText;
 
     public FetchPlayer(TextView mPlayerText) {
         this.mPlayerText = mPlayerText;
@@ -25,7 +25,7 @@ public class FetchPlayer extends AsyncTask<String,Void,String> {
             JSONObject jsonObject = new JSONObject(s);
             JSONArray itemsArray = jsonObject.getJSONArray("items");
 
-            for(int i = 0; i < itemsArray.length(); i++) {
+            for (int i = 0; i < itemsArray.length(); i++) {
                 JSONObject player = itemsArray.getJSONObject(i);
                 String emailAddress = "no email";
                 String name = "no name";
@@ -33,19 +33,17 @@ public class FetchPlayer extends AsyncTask<String,Void,String> {
                 try {
                     emailAddress = player.getString("emailAddress");
                     name = player.getString("name");
-                }
-                catch(Exception e) {
+                } catch (Exception e) {
                     e.printStackTrace();
                 }
 
-                String entry = i +  ", " + name + ", " + emailAddress;
+                String entry = i + ", " + name + ", " + emailAddress;
                 mPlayerText.setText(entry);
                 return;
             }
-            mPlayerText.setText("No results found");
-        }
-        catch (Exception e) {
-            mPlayerText.setText("No results found");
+            mPlayerText.setText(R.string.nores);
+        } catch (Exception e) {
+            mPlayerText.setText(R.string.nores);
             e.printStackTrace();
         }
     }
