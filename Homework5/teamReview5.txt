@@ -1,0 +1,12 @@
+a. The KnightRanker Trello board indicates to me that everyone made contributions recently and the work seems well rounded 
+for each member. Joe does seem to have been picking up a bit more coding work than others, but I noticed that he did not 
+participate in the presentation so they did well balancing out responsibilities.
+b. I liked their presentation and I thought they did improve from the initial presentation. It seemed like they
+took into account suggestions that people had made both at the previous presentation and their user tests, even if 
+it was just prospects for future development and not yet implemented. I thought the app itself looked a lot better and
+I liked that they demonstrated an example of communication between two competitors via the app. It was connected to their
+database and functioned effectively. They even found a legitimate purpose for the color picker. It was overall a compelling
+presentation and I think a promising application.
+c. Although it is still a bit buggy, as most of our apps are, it is at a generally functional phase and is comprehensive.
+I think I would like to see a more interesting home page rather than everything shoved onto the side nav, but that's mostly
+a personal preference. They demonstrated a help popup which was good.
